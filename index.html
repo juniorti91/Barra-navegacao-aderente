@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Nevagação Aderente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <a href="#">JuniorWeb.</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="home"></section>
+    <div class="text">
+        <p>
+        <h2>Barra de Navegação Aderente</h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget
+        ipsum a purus dapibus pellentesque. Cras semper enim ipsum, et fringilla sem ornare ac. Vestibulum gravida ipsum
+        sem, non accumsan lacus tincidunt dictum. Vestibulum venenatis lorem in augue facilisis eleifend. Fusce vel nibh
+        vitae est viverra fringilla. Nulla condimentum massa ac lectus porta imperdiet. Ut imperdiet lobortis nisi et
+        porttitor. Proin in nibh massa.
+
+        Nullam vehicula, sem sit amet lacinia tincidunt, ipsum sapien suscipit magna, id facilisis quam mauris sit amet
+        nunc. Sed sit amet erat ac ipsum dapibus volutpat eget eget sem. Duis augue velit, lobortis quis nisl in,
+        fringilla mattis ligula. Aliquam ut dapibus enim. Curabitur non libero vitae purus rhoncus eleifend a sit amet
+        nibh. Vivamus congue neque eget est bibendum, consequat finibus eros finibus. Cras faucibus lectus nec nulla
+        bibendum, sit amet lacinia justo varius. Nullam diam dui, iaculis sit amet odio sed, malesuada sodales ante.
+        Maecenas neque nibh, rutrum sed libero nec, pretium lobortis est. Etiam non lectus et neque euismod pharetra.
+
+        Duis egestas scelerisque elit, ac ullamcorper libero lobortis at. Vestibulum sagittis mauris quis luctus
+        pharetra. Sed hendrerit, libero at dictum facilisis, nunc mi malesuada quam, vitae fringilla ex dolor ut risus.
+        In hac habitasse platea dictumst. Suspendisse condimentum neque quis ligula dapibus fringilla. Nullam id lorem
+        bibendum, pellentesque quam sed, porta eros. Quisque aliquet bibendum enim, vitae ornare dui scelerisque ut.
+        Etiam mattis ex placerat tempor vehicula. Etiam fermentum augue ex, eget viverra lectus finibus eget. Ut nec
+        lobortis leo, ac lobortis neque. Sed euismod faucibus libero, et posuere elit viverra et. Nam elit sem, blandit
+        a tincidunt at, venenatis et metus. Sed sed sapien ante.
+        </p>
+    </div>
+
+    <script>
+        let nav = document.querySelector("nav");
+        window.addEventListener("scroll", ()=>{
+            if(document.documentElement.scrollTop > 20) {
+                nav.classList.add("sticky");
+            } else {
+                nav.classList.remove("sticky");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
